@@ -9,6 +9,53 @@
         MinHeight="550"
         MinWidth="800"
         Icon="assets/form.ico">
+    
+    <Window.Resources>
+        
+        <Style TargetType="Button">
+            <Setter
+                Property="Width"
+                Value="80"></Setter>
+            <Setter
+                Property="Height"
+                Value="25"></Setter>
+            <Setter
+                Property="Margin"
+                Value="0,0,8,0"></Setter>
+        </Style>
+        
+        
+        <Style
+            TargetType="Border">
+            <Setter
+                Property="Background"
+                Value="Lavender"></Setter>
+            <Setter
+                Property="CornerRadius"
+                Value="5"></Setter>
+            <Setter
+                Property="BorderBrush"
+                Value="Black"></Setter>
+            <Setter
+                Property="BorderThickness"
+                Value="2"></Setter>
+            <Setter
+                Property="Margin"
+                Value="10"></Setter>
+            <Setter Property="Effect">
+                <Setter.Value>
+                    <DropShadowEffect
+                        Opacity="0.5">
+                    </DropShadowEffect>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style TargetType="Label">
+            <Setter
+                Property="FontSize"
+                Value="14"></Setter>
+        </Style>
+    </Window.Resources>
 
     <DockPanel>
         <Label DockPanel.Dock="Top" HorizontalAlignment="Center"
@@ -16,34 +63,17 @@
             FontWeight="Bold">Formulario</Label>
         <DockPanel DockPanel.Dock="Bottom">
             <Label HorizontalAlignment="Left"
-                FontStyle="Italic"
-                FontSize="14">Marga Arroyo</Label>
+                FontStyle="Italic">Marga Arroyo</Label>
             <StackPanel Margin="5" Orientation="Horizontal" HorizontalAlignment="Right">
-                <Button
-                    Width="80"
-                    Height="25"
-                    Margin="0,0,8,0">Aceptar
+                <Button>Aceptar
                 </Button>
-                <Button
-                    Height="25"
-                    Width="80"
-                    HorizontalAlignment="Right">Cancelar
+                <Button>Cancelar
                 </Button>
             </StackPanel>
         </DockPanel>
         <Image DockPanel.Dock="Right" Source="assets/foto.jpg" Margin="5"></Image>
         <StackPanel>
-            <Border
-                CornerRadius="5"
-                BorderThickness="3"
-                BorderBrush="Black"
-                Margin="10"
-                Background="Lavender">
-                <Border.Effect>
-                    <DropShadowEffect
-                        Opacity="0.5">
-                    </DropShadowEffect>
-                </Border.Effect>
+            <Border>
                 <StackPanel>
                     <DockPanel Margin="5,15,5,5">
                         <Label
@@ -86,12 +116,7 @@
                     </DockPanel>
                 </StackPanel>
             </Border>
-            <Border
-                CornerRadius="5"
-                BorderThickness="3"
-                BorderBrush="Black"
-                Margin="10"
-                Background="Lavender">
+            <Border>
                 <Border.Effect>
                     <DropShadowEffect
                         Opacity="0.5">
